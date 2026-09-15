@@ -124,13 +124,21 @@
   this plainly because saying "PaisaBol sends no data" would be misleading.
   PaisaBol itself sends none. Those two Google components do.</p>
 
+  <div class="callout">
+    <p><strong>We do not sell your financial information, and we do not use your
+    financial records for our own marketing.</strong> There is no mechanism by
+    which we could: your transactions, udhar records, budgets and goals are
+    encrypted on your own device with a key we do not hold, and the app sends
+    none of it anywhere. We have no copy to sell, share or advertise against.</p>
+  </div>
+
   <h2>3. Your money data stays on your phone</h2>
   <p>Stored only in PaisaBol's own storage on your device:</p>
   <ul>
     <li>transactions — amount, date, category, merchant name, and any note</li>
     <li>budgets and savings goals</li>
     <li>your categories, including ones you create</li>
-    <li>your profile — name, email address, optional photo, currency, theme and notification settings</li>
+    <li>your profile — first, middle and last name, an optional short bio, email address, optional photo, the country you selected, your chosen currency, theme and notification settings</li>
     <li>your password and app-lock PIN, stored only as <strong>one-way hashes</strong> (PBKDF2-SHA-256, 210,000 iterations, with a random salt). The app cannot recover the originals</li>
     <li>corrections you make to categories or merchants, so the app guesses better next time. You can clear these at any time from <strong>Profile → Privacy &amp; data</strong></li>
   </ul>
@@ -205,7 +213,12 @@
   uses these permissions.</p>
 
   <h2>7. Exporting your data</h2>
-  <p>You can export from <strong>Settings → Data → Export</strong> as PDF, CSV or JSON.</p>
+  <p>You can export from <strong>Settings → Data → Export</strong> as PDF or CSV.</p>
+  <p><strong>Restore.</strong> Settings → Data → Restore reads a JSON backup file.
+  JSON is no longer offered as an export option, so this is for a backup made by
+  an earlier version of the app, or one you produced yourself. Restoring replaces
+  what is currently in the app. The file is read on your device and is not
+  uploaded anywhere.</p>
   <div class="callout">
     <p><strong>Exported files are not encrypted.</strong> They are ordinary,
     readable files. This is deliberate: a backup has to be readable on a different
@@ -254,8 +267,16 @@
     <tr><td>Camera</td><td>Only if you take a profile photo</td></tr>
     <tr><td>Photos / media</td><td>Only if you pick a profile photo from your gallery</td></tr>
     <tr><td>Advertising ID</td><td>Used by Google AdMob to serve ads</td></tr>
+    <tr><td>Location / GPS</td><td><strong>Not requested.</strong> The app declares no location permission at all</td></tr>
   </table>
   </div>
+
+  <h3>Location — we do not ask for it</h3>
+  <p><strong>PaisaBol does not use GPS or location services to determine your
+  country.</strong> You choose your country yourself during setup, from a list,
+  and you can change it later in Settings. The app declares no location
+  permission, contains no location code, and does not infer your country from
+  your IP address, your SIM or your carrier.</p>
 
   <h2>12. Changes to this policy</h2>
   <p>If this policy changes we will update the effective date above and publish the
@@ -423,10 +444,10 @@
 
   <h2>Export before you delete</h2>
   <p>Once deleted, your data cannot be recovered — by you or by us. To keep a copy:
-  <strong>Settings → Data → Export</strong>, then choose PDF, CSV or JSON.</p>
+  <strong>Settings → Data → Export</strong>, then choose PDF or CSV.</p>
   <ul>
     <li><strong>Exported files are not encrypted.</strong> Anyone who opens the file can read your financial data. Keep it somewhere private</li>
-    <li>To restore later, use the <strong>JSON</strong> export. PDF and CSV are for reading and spreadsheets, and cannot be imported back</li>
+    <li>PDF and CSV are for reading and for spreadsheets. Neither can be imported back into the app, so an export is a copy to keep — not a way to move your data to a new phone</li>
   </ul>
 
   <h2>What about data that is not on your phone?</h2>
