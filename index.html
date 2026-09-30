@@ -90,7 +90,7 @@
 <section id="privacy">
   <h1>Privacy Policy</h1>
   <p class="meta">
-    Effective date: 5 September 2026 · Published by Muhammad Yahya Aslam ·
+    Effective date: 30 September 2026 · Published by Muhammad Yahya Aslam ·
     Contact: <a href="mailto:m.yahyaaslamofficial@gmail.com">m.yahyaaslamofficial@gmail.com</a>
   </p>
 
@@ -103,7 +103,7 @@
       <li>Your money data — transactions, budgets, goals — is stored <strong>on your phone</strong>, encrypted. We have no server, so we never receive it.</li>
       <li><strong>Voice is different.</strong> When you speak to PaisaBol, the audio is sent to your phone's speech service (on most Android phones, Google's) to be turned into text. That audio is handled by Google, not by us.</li>
       <li>If you would rather no audio left your phone, <strong>type your transactions instead</strong>. Everything in PaisaBol can be entered by typing.</li>
-      <li>The app shows ads through <strong>Google AdMob</strong>, which uses your device's <strong>Advertising ID</strong>.</li>
+      <li>The app shows ads through <strong>Google AdMob</strong>. AdMob collects your device's <strong>Advertising ID</strong>, your <strong>IP address</strong> (which can show your general location), how you <strong>interact</strong> with the app and its ads, and basic <strong>performance diagnostics</strong> — for ads, analytics and fraud prevention.</li>
       <li>There is <strong>no password recovery</strong> and <strong>no sign-in on a second device</strong>.</li>
       <li><strong>Uninstalling PaisaBol deletes your data.</strong></li>
     </ul>
@@ -192,11 +192,19 @@
   <h2>5. Advertising (Google AdMob)</h2>
   <p>PaisaBol is free and funded by ads. There is no subscription, no paid tier and
   no way to pay to remove ads.</p>
-  <p>Ads are served by <strong>Google AdMob</strong>, which uses your device's
-  <strong>Advertising ID</strong> — a resettable identifier Android provides for
-  advertising — and connects to Google's servers to fetch ads. That data is
-  collected by Google under
-  <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+  <p>Ads are served by <strong>Google AdMob</strong>. To do that, the AdMob SDK
+  connects to Google's servers and automatically collects:</p>
+  <ul>
+    <li>your device's <strong>Advertising ID</strong> and <strong>app set ID</strong> — resettable identifiers Android provides for advertising</li>
+    <li>your <strong>IP address</strong>, which can be used to estimate your <strong>general location</strong> (city or region — never your precise location; PaisaBol has no location permission)</li>
+    <li><strong>interactions</strong> with the app and its ads, such as app launches, ad views and taps</li>
+    <li><strong>diagnostic information</strong> about app and SDK performance, such as launch time</li>
+  </ul>
+  <p>Google uses this for advertising, analytics and fraud prevention, and it is
+  sent encrypted (TLS). It is collected by Google, not by us, under
+  <a href="https://policies.google.com/privacy">Google's privacy policy</a> and
+  described in
+  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's own disclosure</a>.</p>
   <ul>
     <li>We do <strong>not</strong> send your transactions, amounts, merchants, notes, budgets, goals, name, email or photo to AdMob or to any advertiser. Ads have no access to your financial data</li>
     <li>You can reset or delete your Advertising ID in <strong>Android Settings → Privacy → Ads</strong></li>
@@ -206,10 +214,12 @@
   or welcome screens, and never during voice input.</p>
 
   <h2>6. Camera and photos</h2>
-  <p>If you choose to set a profile photo, PaisaBol asks for camera or photo access
-  at that moment. The photo is stored <strong>inside your encrypted data on this
-  phone</strong> and is never uploaded. If you never set a photo, the app never
-  uses these permissions.</p>
+  <p>If you take a profile photo with the camera, PaisaBol asks for camera access at
+  that moment. If you pick one from your gallery, Android's <strong>photo
+  picker</strong> opens and shares only the one photo you choose — PaisaBol has
+  <strong>no permission to see the rest of your photos</strong>. The photo is
+  stored <strong>inside your encrypted data on this phone</strong> and is never
+  uploaded.</p>
 
   <h2>7. Exporting your data</h2>
   <p>You can export from <strong>Settings → Data → Export</strong> as PDF or CSV.</p>
@@ -264,7 +274,7 @@
     <tr><td>Modify audio settings</td><td>Required alongside the microphone to open an audio input</td></tr>
     <tr><td>Internet</td><td>Needed by Google AdMob and by your phone's speech service. PaisaBol's own code makes no network calls</td></tr>
     <tr><td>Camera</td><td>Only if you take a profile photo</td></tr>
-    <tr><td>Photos / media</td><td>Only if you pick a profile photo from your gallery</td></tr>
+    <tr><td>Photos / media</td><td><strong>Not requested.</strong> The gallery opens Android's photo picker, which shares only the photo you choose</td></tr>
     <tr><td>Advertising ID</td><td>Used by Google AdMob to serve ads</td></tr>
     <tr><td>Location / GPS</td><td><strong>Not requested.</strong> The app declares no location permission at all</td></tr>
   </table>
@@ -276,6 +286,9 @@
   and you can change it later in Settings. The app declares no location
   permission, contains no location code, and does not infer your country from
   your IP address, your SIM or your carrier.</p>
+  <p>Google AdMob, which serves the ads, does receive your IP address, which can
+  show your general area (city or region). That is Google's collection, described
+  in section 5 — PaisaBol itself never reads or uses it.</p>
 
   <h2>12. Changes to this policy</h2>
   <p>If this policy changes we will update the effective date above and publish the
@@ -293,7 +306,7 @@
 <section id="terms">
   <h1>Terms of Service</h1>
   <p class="meta">
-    Effective date: 5 September 2026 · Published by Muhammad Yahya Aslam ·
+    Effective date: 30 September 2026 · Published by Muhammad Yahya Aslam ·
     Contact: <a href="mailto:m.yahyaaslamofficial@gmail.com">m.yahyaaslamofficial@gmail.com</a>
   </p>
   <p>By installing or using PaisaBol you agree to these terms. If you do not
@@ -395,7 +408,7 @@
 <section id="deletion">
   <h1>Deleting Your Data</h1>
   <p class="meta">
-    Effective date: 5 September 2026 · Published by Muhammad Yahya Aslam ·
+    Effective date: 30 September 2026 · Published by Muhammad Yahya Aslam ·
     Contact: <a href="mailto:m.yahyaaslamofficial@gmail.com">m.yahyaaslamofficial@gmail.com</a>
   </p>
 
@@ -477,7 +490,7 @@
 </section>
 
 <footer>
-  PaisaBol · Published by Muhammad Yahya Aslam · Last updated 5 September 2026
+  PaisaBol · Published by Muhammad Yahya Aslam · Last updated 30 September 2026
 </footer>
 
 </div>
